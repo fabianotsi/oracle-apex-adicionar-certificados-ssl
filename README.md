@@ -45,4 +45,11 @@ BEGIN
   UTL_HTTP.end_response(resp);
 END;
 /
+```
+
+### 3. Adicionar a wallet nas configurações do servidor APEX:
+
+Atentique-se no servidor apex, no schema "INTERNAL" e adicione o caminho da sua wallet, conforme exemplo na imagem abaixo:
+
+![image](https://user-images.githubusercontent.com/67388015/189766289-bca70654-1474-4658-82e0-cfb33b971d3d.png)
 
