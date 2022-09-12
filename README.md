@@ -18,11 +18,17 @@ WALLET_LOCATION=(SOURCE=(METHOD=file)(METHOD_DATA=(DIRECTORY=$ORACLE_HOME/wallet
 
 ```bash
 orapki wallet create -wallet $ORACLE_HOME/wallet -pwd <My_Password> -auto_login
+```
 
+```bash
 orapki wallet add -wallet $ORACLE_HOME/wallet -cert /tmp/cert-Digicert.cer -trusted_cert -pwd <My_Password>
+```
 
+```bash
 orapki wallet add -wallet $ORACLE_HOME/wallet -cert /tmp/cert-ThateRSACA2018.cer -trusted_cert -pwd <My_Password>
+```
 
+```bash
 orapki wallet display -wallet $ORACLE_HOME/wallet -pwd <My_Password>
 ```
 
