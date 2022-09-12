@@ -1,21 +1,20 @@
 
 
 <div align="center">
-  <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/267479684/original/83f0b98372561b234cb8892340da027eed98e73c/develop-oracle-databases-apex-applications-plsql.png">  
-  <p style="font-size: 2rem;">adicionar certificados SSL no Oracle APEX</p>
+  <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/267479684/original/83f0b98372561b234cb8892340da027eed98e73c/develop-oracle-databases-apex-applications-plsql.png" width="40%" height="40%">  
 </div>
 
 # Adicionar Certificados SSL no Oracle APEX 
 
 ## Passos
 
-1. Acrescentar em SQLNET.ORA:
+### 1. Acrescentar em SQLNET.ORA:
 
 ```bash
 WALLET_LOCATION=(SOURCE=(METHOD=file)(METHOD_DATA=(DIRECTORY=$ORACLE_HOME/wallet)))
 ```
 
-2.  Comandos para criar a wallet e adicionar os certificados da url https que o APEX deve alcançar (adicionar a cadeia de certificados). Abaixo, um exemplo:
+### 2.  Comandos para criar a wallet e adicionar os certificados da url https que o APEX deve alcançar (adicionar a cadeia de certificados). Abaixo, um exemplo:
 
 ```bash
 orapki wallet create -wallet $ORACLE_HOME/wallet -pwd <My_Password> -auto_login
@@ -27,7 +26,7 @@ orapki wallet add -wallet $ORACLE_HOME/wallet -cert /tmp/cert-ThateRSACA2018.cer
 orapki wallet display -wallet $ORACLE_HOME/wallet -pwd <My_Password>
 ```
 
-3. Testar a requisição para URL com o script abaixo:
+### 3. Testar a requisição para URL com o script abaixo:
 
 ```bash
 DECLARE
