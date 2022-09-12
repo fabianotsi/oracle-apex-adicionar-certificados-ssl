@@ -49,7 +49,7 @@ END;
 
 ### 3. Adicionar a wallet nas configurações do servidor APEX:
 
-Autentique-se no servidor Apex, no workspace "INTERNAL", e adicione o caminho da sua wallet conforme exemplo na imagem abaixo:
+Autentique-se no servidor Apex, no workspace "INTERNAL", e adicione o caminho da sua wallet em "Gerenciar Instância / Definições de Instâncias / Wallet", conforme exemplo na imagem abaixo:
 
 ![image](https://user-images.githubusercontent.com/67388015/189766289-bca70654-1474-4658-82e0-cfb33b971d3d.png)
 
